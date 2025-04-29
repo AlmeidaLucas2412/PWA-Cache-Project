@@ -4,11 +4,11 @@ export const registerSW = async () => {
       const registration = await navigator.serviceWorker.register(
         "/service-worker.js"
       );
-      console.log("Service Worker registrado com sucesso:", registration);
+      console.log("Service Worker successfully registered:", registration);
     } catch (error) {
-      console.error("Falha ao registrar Service Worker:", error);
+      console.error("Failed to register Service Worker:", error);
     }
   } else {
-    console.log("Service Workers não são suportados neste navegador");
+    console.log("Service Workers are not supported in this browser.");
   }
 };
