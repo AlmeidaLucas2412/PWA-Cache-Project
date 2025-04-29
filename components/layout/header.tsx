@@ -10,7 +10,7 @@ export const Header = () => {
           <Home className="size-6" />
         </Link>
       </Button>
-      <h1 className="text-3xl font-bold">
+      <h1 className="text-2xl font-bold">
         AWP <span className="text-primary-foreground/70">STORE</span>
       </h1>
       <Button asChild variant="ghost">
