@@ -1,7 +1,14 @@
+"use client";
+
 import { Header } from "@/components/layout/header";
 import { Card } from "./card";
+import { useEffect } from "react";
+import { registerSW } from "@/lib/register-sw";
 
 export default function Home() {
+  useEffect(() => {
+    registerSW();
+  }, []);
   return (
     <section className="h-screen flex flex-col items-center p-8">
       <Header />
