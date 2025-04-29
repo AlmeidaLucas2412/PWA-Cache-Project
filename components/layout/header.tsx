@@ -4,7 +4,7 @@ import { Home, Store } from "lucide-react";
 
 export const Header = () => {
   return (
-    <header className="flex justify-between w-full">
+    <header className="flex justify-between w-full items-center p-8 pb-2">
       <Button asChild variant="ghost">
         <Link href="/">
           <Home className="size-6" />

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Raleway } from "next/font/google";
 import "./globals.css";
+import { Header } from "@/components/layout/header";
 
 const raleway = Raleway({
   variable: "--font-raleway",
@@ -23,6 +24,7 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.png" />
       </head>
       <body className={`${raleway.className} h-dvh vsc-initialized`}>
+        <Header />
         {children}
       </body>
     </html>
